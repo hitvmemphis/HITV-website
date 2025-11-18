@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #3c6e71; /* A professional, deep teal */
+    color: #fff;
+    padding-top: 10px;
+    min-height: 70px;
+    border-bottom: #284b63 3px solid;
+}
+
+header h1 {
+    float: left;
+    margin-top: 10px;
+}
+
+header nav {
+    float: right;
+    margin-top: 25px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 0 15px 0 15px;
+}
+
+.hero {
+    background: #284b63; /* Darker blue for contrast */
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.button {
+    display: inline-block;
+    color: #fff;
+    background: #a9d6e5; /* A bright, encouraging blue */
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+section {
+    padding: 20px 0;
+    background: #fff;
+}
+
+.light-bg {
+    background: #eee;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #333;
+    text-align: center;
+}
