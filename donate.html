@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support HITV - Help In The Vineyard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        
+        body { font-family: 'Lato', sans-serif; }
+        h1, h2, h3, blockquote { font-family: 'Playfair Display', serif; }
+        
+        /* Vineyard Palette */
+        .text-moss { color: #2C5F2D; }
+        .bg-cream { background-color: #FDFBF7; }
+        .bg-moss { background-color: #2C5F2D; }
+        .bg-moss-dark { background-color: #1F4421; }
+        .text-gold { color: #D4A373; }
+    </style>
+</head>
+<body class="bg-cream text-gray-700 antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b border-stone-100">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-3xl font-bold text-moss tracking-wide hover:opacity-80 transition">HITV</a>
+            <a href="index.html" class="text-gray-500 hover:text-moss font-medium">Back to Home</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-moss text-white py-20 text-center">
+        <div class="max-w-3xl mx-auto px-6">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Invest in First Chances</h1>
+            <p class="text-xl text-green-100 font-light leading-relaxed">
+                Your support builds a bridge from crisis to stability for vulnerable adults and seniors in Memphis.
+            </p>
+        </div>
+    </div>
+
+    <!-- Donation Content -->
+    <section class="py-20">
+        <div class="max-w-4xl mx-auto px-6">
+            
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                
+                <!-- Left: The "Why" -->
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Where Your Money Goes</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-700 shrink-0 mt-1">
+                                <i class="fa-solid fa-book-open"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="font-bold text-lg">Resource Packets</h3>
+                                <p class="text-gray-600 text-sm">Printing guides for seniors on digital literacy and fraud prevention.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-700 shrink-0 mt-1">
+                                <i class="fa-solid fa-user-nurse"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="font-bold text-lg">Intake Support</h3>
+                                <p class="text-gray-600 text-sm">Funding the administration needed to vet therapists and connect clients to care.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center text-purple-700 shrink-0 mt-1">
+                                <i class="fa-solid fa-hand-holding-heart"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="font-bold text-lg">Wellness Vouchers</h3>
+                                <p class="text-gray-600 text-sm">Subsidizing small costs for gym passes or transportation to recovery meetings.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: The Donation Box -->
+                <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-gold text-center">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Make a Contribution</h3>
+                    <p class="text-gray-600 mb-8">Help us build the vineyard.</p>
+                    
+                    <!-- PLACEHOLDER BUTTON - REPLACE WITH YOUR PAYPAL LINK -->
+                    <a href="#" class="block w-full bg-gold text-white font-bold py-4 rounded-lg shadow-md hover:bg-yellow-600 transition mb-4 text-lg">
+                        Donate via PayPal
+                    </a>
+                    
+                    <p class="text-xs text-gray-400 mt-6">
+                        *HITV is a Tennessee non-profit corporation currently pending 501(c)(3) tax-exempt status. Contributions may not be tax-deductible until status is approved.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 text-center">
+        <p class="text-gray-400 text-sm">&copy; 2025 Help In The Vineyard. Memphis, TN.</p>
+    </footer>
+
+</body>
+</html>
