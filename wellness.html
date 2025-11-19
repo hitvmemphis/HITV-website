@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <title>Health & Wellness - HITV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        body { font-family: 'Lato', sans-serif; }
+        h1, h2, h3, blockquote { font-family: 'Playfair Display', serif; }
+        .font-logo { font-family: 'Cinzel', serif; }
+        /* Green Theme */
+        .text-moss { color: #2C5F2D; }
+        .text-gold { color: #D4A373; }
+        .bg-cream { background-color: #FDFBF7; }
+    </style>
+</head>
+<body class="bg-cream text-gray-700 antialiased flex flex-col min-h-screen">
+
+    <nav class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-stone-100">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8 flex justify-between h-20 items-center">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <i class="fa-solid fa-grapes text-moss text-3xl group-hover:rotate-12 transition"></i>
+                <div class="flex flex-col justify-center">
+                    <div class="flex items-baseline gap-2">
+                        <span class="font-logo text-3xl font-bold text-moss tracking-widest leading-none">HITV</span>
+                        <span class="text-sm text-gray-400 font-light uppercase tracking-widest border-l border-gray-300 pl-2 leading-none">Memphis</span>
+                    </div>
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-gold font-bold mt-1">Help In The Vineyard</span>
+                </div>
+            </a>
+            <a href="index.html" class="text-gray-500 hover:text-moss font-medium">Back to Home</a>
+        </div>
+    </nav>
+
+    <div class="bg-green-800 py-24 text-center text-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl">
+                <i class="fa-solid fa-leaf"></i>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Health & Wellness</h1>
+            <p class="text-xl text-green-100 font-light italic">"The body and the mind are connected. You cannot heal one without the other."</p>
+        </div>
+    </div>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="prose prose-lg mx-auto text-gray-600 mb-16">
+                <p>Hard times take a physical toll. Stress, trauma, and grief live in the body. At HITV, we believe that physical movement isn't a luxury; it's a vital tool for managing anger, depression, and anxiety.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-stone-50 p-8 rounded-xl border-l-4 border-green-600">
+                    <h3 class="text-2xl font-bold text-green-900 mb-3">Wellness Scholarships</h3>
+                    <p class="text-gray-600">We partner with local gyms, boxing clubs, and yoga studios to provide free or subsidized passes for our clients. This provides a safe, disciplined outlet for stress.</p>
+                </div>
+                <div class="bg-stone-50 p-8 rounded-xl border-l-4 border-green-600">
+                    <h3 class="text-2xl font-bold text-green-900 mb-3">Nutrition & Food Security</h3>
+                    <p class="text-gray-600">You can't be mentally stable if you are hungry. We connect families to food pantries and provide practical education on healthy eating on a budget.</p>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="mailto:help@hitvmemphis.org" class="inline-block bg-green-700 text-white px-8 py-4 rounded-full font-bold hover:bg-green-800 transition shadow-lg">
+                    Request a Wellness Voucher
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-16 mt-auto">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col items-center">
+            <div class="mb-6"><img src="hitv-logo.jpg" alt="HITV Seal" class="h-24 w-24 rounded-full border-2 border-gray-700 opacity-80"></div>
+            <div class="flex items-baseline gap-2 mb-2">
+                <span class="font-logo text-3xl font-bold text-white tracking-widest leading-none">HITV</span>
+                <span class="text-sm text-gray-500 font-light uppercase tracking-widest border-l border-gray-600 pl-2 leading-none">Memphis</span>
+            </div>
+            <span class="text-[10px] uppercase tracking-[0.2em] text-gold font-bold mb-8">Help In The Vineyard</span>
+            <p class="text-sm text-gray-500 text-center">&copy; 2025 Help In The Vineyard.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
