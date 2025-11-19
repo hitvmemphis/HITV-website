@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +7,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
         
         body { font-family: 'Lato', sans-serif; }
         h1, h2, h3, blockquote { font-family: 'Playfair Display', serif; }
+        .font-logo { font-family: 'Cinzel', serif; }
         
         /* Vineyard Palette */
         .text-moss { color: #2C5F2D; }
@@ -18,106 +19,203 @@
         .bg-moss { background-color: #2C5F2D; }
         .bg-moss-dark { background-color: #1F4421; }
         .text-gold { color: #D4A373; }
+        .bg-stone-50 { background-color: #FAFAF9; }
     </style>
 </head>
 <body class="bg-cream text-gray-700 antialiased flex flex-col min-h-screen">
 
     <!-- Navigation -->
     <nav class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-stone-100">
-<div class="max-w-6xl mx-auto px-6 lg:px-8">
-<div class="flex justify-between h-20 items-center">
-<!-- COOLER LOGO WITH LOCATION -->
-<a href="index.html" class="flex items-center gap-3 group">
-<!-- Grape Icon -->
-<i class="fa-solid fa-grapes text-moss text-3xl group-hover:rotate-12 transition"></i>
-<div class="flex flex-col justify-center">
-<div class="flex items-baseline gap-2">
-<!-- Main Brand -->
-<span class="font-logo text-3xl font-bold text-moss tracking-widest group-hover:opacity-80 transition leading-none">HITV</span>
-<!-- Location Tag (The "Chapter" Look) -->
-<span class="text-sm text-gray-400 font-light uppercase tracking-widest border-l border-gray-300 pl-2 leading-none">Memphis</span>
-</div>
-<!-- Full Legal Name Underneath -->
-<span class="text-[10px] uppercase tracking-[0.2em] text-gold font-bold mt-1">Help In The Vineyard</span>
-</div>
-</a>
-            <a href="index.html" class="text-gray-500 hover:text-moss font-medium">Back to Home</a>
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                
+                <!-- Full Logo Block -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <i class="fa-solid fa-grapes text-moss text-3xl group-hover:rotate-12 transition"></i>
+                    <div class="flex flex-col justify-center">
+                        <div class="flex items-baseline gap-2">
+                            <span class="font-logo text-3xl font-bold text-moss tracking-widest group-hover:opacity-80 transition leading-none">HITV</span>
+                            <span class="text-sm text-gray-400 font-light uppercase tracking-widest border-l border-gray-300 pl-2 leading-none">Memphis</span>
+                        </div>
+                        <span class="text-[10px] uppercase tracking-[0.2em] text-gold font-bold mt-1">Help In The Vineyard</span>
+                    </div>
+                </a>
+
+                <!-- Nav Links -->
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-500 hover:text-moss font-medium hidden sm:block">Back to Home</a>
+                    <a href="#volunteer" class="text-gray-600 hover:text-moss font-bold transition">Volunteer</a>
+                </div>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <div class="bg-moss text-white py-20 text-center">
-        <div class="max-w-3xl mx-auto px-6">
-            <h1 class="text-4xl md:text-5xl font-bold mb-6">Help Someone Pick Up Where They Left Off</h1>
-            <p class="text-xl text-green-100 font-light leading-relaxed">
-                Your support builds a bridge from crisis to stability for vulnerable adults and seniors in Memphis.
+    <div class="bg-moss text-white py-24 text-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        <div class="max-w-4xl mx-auto px-6 relative z-10">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Help Someone Pick Up<br/> Where They Left Off
+            </h1>
+            <p class="text-xl md:text-2xl text-green-100 font-light leading-relaxed max-w-2xl mx-auto">
+                We get one life. Your support builds the bridge between a hard time and a thriving future.
             </p>
         </div>
     </div>
 
     <!-- Donation Content -->
     <section class="py-20">
-        <div class="max-w-4xl mx-auto px-6">
-            
-            <div class="grid md:grid-cols-2 gap-12 items-start">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-start">
                 
                 <!-- Left: The "Why" -->
                 <div>
-                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Where Your Money Goes</h2>
-                    <div class="space-y-6">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-8">Removing the Barriers</h2>
+                    <div class="space-y-8">
+                        
+                        <!-- Item 1: Dignified Intake -->
                         <div class="flex items-start">
-                            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-700 shrink-0 mt-1">
-                                <i class="fa-solid fa-book-open"></i>
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-700 shrink-0 mt-1 text-xl">
+                                <i class="fa-solid fa-mug-hot"></i>
                             </div>
-                            <div class="ml-4">
-                                <h3 class="font-bold text-lg">Resource Packets</h3>
-                                <p class="text-gray-600 text-sm">Printing guides for seniors on digital literacy and fraud prevention.</p>
+                            <div class="ml-6">
+                                <h3 class="font-bold text-xl text-gray-900">Dignified Intake Support</h3>
+                                <p class="text-gray-600 mt-1">We don't treat people like cases. Your donation funds face-to-face meetings over coffee or a meal, allowing us to build a trusted relationship while we assess needs and navigate the system together.</p>
                             </div>
                         </div>
+
+                        <!-- Item 2: Education Scholarship -->
                         <div class="flex items-start">
-                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-700 shrink-0 mt-1">
-                                <i class="fa-solid fa-user-nurse"></i>
+                            <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-700 shrink-0 mt-1 text-xl">
+                                <i class="fa-solid fa-graduation-cap"></i>
                             </div>
-                            <div class="ml-4">
-                                <h3 class="font-bold text-lg">Intake Support</h3>
-                                <p class="text-gray-600 text-sm">Funding the administration needed to vet therapists and connect clients to care.</p>
+                            <div class="ml-6">
+                                <h3 class="font-bold text-xl text-gray-900">Education & GED Scholarships</h3>
+                                <p class="text-gray-600 mt-1">We provide scholarships to cover GED exam fees or trade school applications for adults trying to go back to school. We remove the financial hurdle so they can focus on learning.</p>
                             </div>
                         </div>
+
+                        <!-- Item 3: Expert Workshops -->
                         <div class="flex items-start">
-                            <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center text-purple-700 shrink-0 mt-1">
-                                <i class="fa-solid fa-hand-holding-heart"></i>
+                            <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center text-teal-700 shrink-0 mt-1 text-xl">
+                                <i class="fa-solid fa-chalkboard-user"></i>
                             </div>
-                            <div class="ml-4">
-                                <h3 class="font-bold text-lg">Wellness Vouchers</h3>
-                                <p class="text-gray-600 text-sm">Subsidizing small costs for gym passes or transportation to recovery meetings.</p>
+                            <div class="ml-6">
+                                <h3 class="font-bold text-xl text-gray-900">Expert Workshops</h3>
+                                <p class="text-gray-600 mt-1">Funding brings in nutritionists, financial planners, and healthcare professionals to teach free community classes, providing high-quality knowledge to those who need it most.</p>
                             </div>
                         </div>
+
+                        <!-- Item 4: Wellness -->
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-700 shrink-0 mt-1 text-xl">
+                                <i class="fa-solid fa-heart-pulse"></i>
+                            </div>
+                            <div class="ml-6">
+                                <h3 class="font-bold text-xl text-gray-900">Wellness Vouchers</h3>
+                                <p class="text-gray-600 mt-1">We subsidize costs for gym memberships and nutrition programs, giving clients a physical outlet for stress and a community of discipline.</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
                 <!-- Right: The Donation Box -->
-                <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-gold text-center">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Make a Contribution</h3>
-                    <p class="text-gray-600 mb-8">Help us build the vineyard.</p>
+                <div class="bg-white p-10 rounded-2xl shadow-2xl border-t-8 border-gold text-center relative -mt-10 md:mt-0">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4 font-serif">Fund the Foundation</h3>
+                    <p class="text-gray-600 mb-10 text-lg">Help us build the vineyard.</p>
                     
                     <!-- PLACEHOLDER BUTTON - REPLACE WITH YOUR PAYPAL LINK -->
-                    <a href="#" class="block w-full bg-gold text-white font-bold py-4 rounded-lg shadow-md hover:bg-yellow-600 transition mb-4 text-lg">
+                    <a href="#" class="block w-full bg-gold text-white font-bold py-5 rounded-xl shadow-lg hover:bg-yellow-600 transition mb-6 text-xl transform hover:-translate-y-1">
                         Donate via PayPal
                     </a>
                     
-                    <p class="text-xs text-gray-400 mt-6">
-                        *HITV is a Tennessee non-profit corporation currently pending 501(c)(3) tax-exempt status. Contributions may not be tax-deductible until status is approved.
-                    </p>
+                    <div class="border-t border-gray-100 pt-6 mt-6">
+                        <p class="text-xs text-gray-400 leading-relaxed">
+                            *HITV is a Tennessee non-profit corporation currently pending 501(c)(3) tax-exempt status. Contributions may not be tax-deductible until status is approved by the IRS.
+                        </p>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Volunteer Section -->
+    <section id="volunteer" class="py-20 bg-stone-50 border-t border-stone-200">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Give Your Time</h2>
+            <p class="text-xl text-gray-600 mb-12 font-light">"We are all helpers one to another." If you can't give money, your time is just as valuable.</p>
+            
+            <div class="grid md:grid-cols-3 gap-6 text-left">
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                    <i class="fa-solid fa-chalkboard-user text-moss text-3xl mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">Share Expertise</h3>
+                    <p class="text-sm text-gray-600">Are you a nutritionist, financial planner, or tech wiz? Host a workshop for us.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                    <i class="fa-solid fa-people-arrows text-moss text-3xl mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">Be a Connector</h3>
+                    <p class="text-sm text-gray-600">Help us network with churches and community centers to find those in need.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                    <i class="fa-solid fa-calendar-day text-moss text-3xl mb-4"></i>
+                    <h3 class="font-bold text-lg mb-2">Event Support</h3>
+                    <p class="text-sm text-gray-600">Help staff our table at local events to spread the word about HITV resources.</p>
+                </div>
+            </div>
+
+            <div class="mt-12">
+                <a href="mailto:help@hitvmemphis.org?subject=I want to Volunteer" class="inline-block border-2 border-moss text-moss font-bold px-8 py-3 rounded-full hover:bg-moss hover:text-white transition">
+                    Sign Up to Volunteer
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-8 text-center">
-        <p class="text-gray-400 text-sm">&copy; 2025 Help In The Vineyard. Memphis, TN.</p>
+    <footer class="bg-moss-dark text-white py-20 mt-auto border-t border-green-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-12">
+                <!-- Left: The Identity -->
+                <div class="text-center md:text-left">
+                    <div class="flex flex-col items-center md:items-start gap-4">
+                        <img src="hitv-logo.jpg" alt="HITV Seal" class="h-24 w-24 rounded-full border-2 border-green-800 opacity-90 shadow-lg object-cover">
+                        <div>
+                            <div class="flex items-baseline gap-2 justify-center md:justify-start">
+                                <span class="font-logo text-3xl font-bold text-white tracking-widest leading-none">HITV</span>
+                                <span class="text-sm text-green-300 font-light uppercase tracking-widest border-l border-green-600 pl-2 leading-none">Memphis</span>
+                            </div>
+                            <span class="text-[10px] uppercase tracking-[0.2em] text-gold font-bold block mt-1">Help In The Vineyard</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right: The "Why" -->
+                <div class="text-center md:text-right max-w-md">
+                    <blockquote class="text-2xl font-serif italic text-green-100 mb-6 leading-relaxed">
+                        "We are all helpers one to another."
+                    </blockquote>
+                    <div class="flex flex-col gap-2">
+                        <a href="mailto:help@hitvmemphis.org" class="text-lg font-bold hover:text-gold transition flex items-center justify-center md:justify-end gap-2">
+                            <i class="fa-solid fa-envelope"></i> help@hitvmemphis.org
+                        </a>
+                        <p class="text-green-400 text-sm">Memphis, Tennessee</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-green-800 mt-16 pt-8 text-center md:text-left flex flex-col md:flex-row justify-between items-end text-xs text-green-400/60">
+                <div class="max-w-lg mx-auto md:mx-0">
+                    <p class="mb-1">*HITV is a Tennessee non-profit corporation. We are currently pending 501(c)(3) tax-exempt status from the IRS.</p>
+                    <p>Contributions may not be tax-deductible until status is approved.</p>
+                </div>
+                <div class="mt-4 md:mt-0 mx-auto md:mx-0">
+                    <p>&copy; 2025 Help In The Vineyard.</p>
+                </div>
+            </div>
+            
+        </div>
     </footer>
 
 </body>
 </html>
+
