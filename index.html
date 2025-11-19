@@ -194,34 +194,70 @@
         </div>
     </section>
 
-       <!-- REVISED FOOTER --><footer class="bg-gray-900 text-white py-16 mt-auto">
-        <div class="max-w-6xl mx-auto px-6 flex flex-col items-center">
+       <!-- Footer -->
+    <footer class="w-full">
+        
+        <!-- Top Section: 3-Column Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 min-h-[400px]">
             
-            <!-- Logo Block (resembles header) --><div class="flex items-center gap-3 mb-6">
-                <i class="fa-solid fa-grapes text-moss text-3xl"></i>
-                <div class="flex flex-col justify-center">
-                    <div class="flex items-baseline gap-2">
-                        <span class="font-logo text-3xl font-bold text-white tracking-widest leading-none">HITV</span>
-                        <span class="text-sm text-gray-400 font-light uppercase tracking-widest border-l border-gray-600 pl-2 leading-none">Memphis</span>
+            <!-- Left Frame: Young Helping Senior -->
+            <div class="relative h-64 md:h-auto">
+                <img src="https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                     alt="Young adult helping a senior citizen" 
+                     class="absolute inset-0 w-full h-full object-cover">
+                <!-- Slight overlay to blend if needed -->
+                <div class="absolute inset-0 bg-black/10"></div>
+            </div>
+
+            <!-- Middle Frame: Branding & Contact (White Background) -->
+            <div class="bg-white flex flex-col justify-center items-center p-12 text-center border-y md:border-y-0 md:border-x border-stone-200">
+                
+                <!-- Text Logo Block (Dark Text for White Background) -->
+                <div class="flex flex-col items-center mb-8">
+                    <div class="flex items-center gap-2 mb-1">
+                        <i class="fa-solid fa-grapes text-moss text-3xl"></i>
+                        <div class="flex items-baseline gap-2">
+                            <span class="font-logo text-3xl font-bold text-moss tracking-widest leading-none">HITV</span>
+                            <span class="text-sm text-gray-500 font-light uppercase tracking-widest border-l border-gray-400 pl-2 leading-none">Memphis</span>
+                        </div>
                     </div>
-                    <span class="text-[10px] uppercase tracking-[0.2em] text-gold font-bold mt-1">Help In The Vineyard</span>
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-gold font-bold">Help In The Vineyard</span>
+                </div>
+
+                <!-- Real Logo Seal -->
+                <div class="mb-8">
+                    <img src="hitv-logo.jpg" alt="HITV Seal" class="h-28 w-28 rounded-full border-4 border-stone-100 shadow-sm object-cover">
+                </div>
+
+                <!-- Email Icon & Link -->
+                <div class="flex flex-col items-center">
+                    <a href="mailto:help@hitvmemphis.org" class="text-3xl text-moss hover:text-gold transition mb-2">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="mailto:help@hitvmemphis.org" class="text-gray-600 hover:text-moss font-medium">
+                        help@hitvmemphis.org
+                    </a>
                 </div>
             </div>
 
-            <!-- Real Logo Seal --><div class="mb-8">
-                <img src="hitv-logo.jpg" alt="HITV Seal" class="h-24 w-24 rounded-full border-2 border-gray-700 opacity-80 hover:opacity-100 transition object-cover">
-            </div>
-            
-            <!-- Contact/Social Links --><div class="flex justify-center space-x-6 mb-10">
-                <a href="mailto:help@hitvmemphis.org" class="text-2xl hover:text-gold transition"><i class="fa-solid fa-envelope"></i></a>
+            <!-- Right Frame: Senior Helping Adult (Mentorship/Education) -->
+            <div class="relative h-64 md:h-auto">
+                <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                     alt="Senior citizen mentoring a younger adult" 
+                     class="absolute inset-0 w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black/10"></div>
             </div>
 
-            <!-- Legal --><div class="border-t border-gray-800 pt-8 w-full max-w-2xl text-center">
-                <p class="text-sm text-gray-500 mb-2">
+        </div>
+
+        <!-- Bottom Disclaimer Bar -->
+        <div class="bg-stone-900 text-stone-400 py-6 px-6 text-center text-xs md:text-sm">
+            <div class="max-w-6xl mx-auto">
+                <p class="mb-2">
                     *HITV is a Tennessee non-profit corporation. We are currently pending 501(c)(3) tax-exempt status from the IRS.
                 </p>
-                <p class="text-sm text-gray-600">
-                    &copy; 2025 Help In The Vineyard. All rights reserved.
+                <p>
+                    &copy; 2025 Help In The Vineyard. All rights reserved. | Memphis, TN
                 </p>
             </div>
         </div>
@@ -229,6 +265,7 @@
 
 </body>
 </html>
+
 
 
 
