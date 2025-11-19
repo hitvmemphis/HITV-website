@@ -7,13 +7,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
         
         body { font-family: 'Lato', sans-serif; }
         h1, h2, h3, blockquote { font-family: 'Playfair Display', serif; }
+        .font-logo { font-family: 'Cinzel', serif; }
         
         /* Vineyard Palette */
         .bg-cream { background-color: #FDFBF7; }
+        .bg-stone { background-color: #E7E5E4; }
         .text-moss { color: #2C5F2D; }
         .bg-moss { background-color: #2C5F2D; }
         .bg-moss-dark { background-color: #1F4421; }
@@ -32,26 +34,23 @@
     <nav class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-stone-100">
         <div class="max-w-6xl mx-auto px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
-                <!-- COOLER LOGO WITH LOCATION -->
+                <!-- LOGO BLOCK -->
                 <a href="index.html" class="flex items-center gap-3 group">
-                    <!-- Grape Icon -->
                     <i class="fa-solid fa-grapes text-moss text-3xl group-hover:rotate-12 transition"></i>
-                    
                     <div class="flex flex-col justify-center">
                         <div class="flex items-baseline gap-2">
-                            <!-- Main Brand -->
                             <span class="font-logo text-3xl font-bold text-moss tracking-widest group-hover:opacity-80 transition leading-none">HITV</span>
-                            <!-- Location Tag (The "Chapter" Look) -->
                             <span class="text-sm text-gray-400 font-light uppercase tracking-widest border-l border-gray-300 pl-2 leading-none">Memphis</span>
                         </div>
-                        <!-- Full Legal Name Underneath -->
                         <span class="text-[10px] uppercase tracking-[0.2em] text-gold font-bold mt-1">Help In The Vineyard</span>
                     </div>
                 </a>
                 
+                <!-- Menu Links (UPDATED) -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#mission" class="text-gray-600 hover:text-moss font-medium transition">Mission</a>
-                    <a href="#services" class="text-gray-600 hover:text-moss font-medium transition">Services</a>
+                    <a href="#mission" class="text-gray-600 hover:text-moss font-medium transition">Our Mission</a>
+                    <a href="#resources" class="text-gray-600 hover:text-moss font-medium transition">Resources</a>
+                    <a href="partners.html" class="text-gray-600 hover:text-moss font-medium transition">Partners</a>
                     <a href="donate.html" class="bg-moss text-white px-6 py-2 rounded-full font-medium hover:bg-moss-dark transition shadow-md">
                         Support Us
                     </a>
@@ -80,12 +79,10 @@
         <div class="max-w-6xl mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 
-                <!-- YOUR LOGO HERE -->
                 <div class="flex justify-center">
                     <img src="hitv-logo.jpg" alt="Help In The Vineyard Logo" class="w-3/4 md:w-full max-w-md rounded-full shadow-2xl border-4 border-white">
                 </div>
 
-                <!-- The Text -->
                 <div>
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Mission</h2>
                     <p class="text-xl text-gray-700 leading-relaxed mb-6">
@@ -113,17 +110,17 @@
         </div>
     </section>
 
-    <!-- 5 Pillars Section (WITH ACTION LINKS) -->
-    <section id="services" class="py-24 bg-stone-50">
+    <!-- 5 Pillars Section (ID changed to resources) -->
+    <section id="resources" class="py-24 bg-stone-50">
         <div class="max-w-6xl mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our 5 Pillars of Support</h2>
-                <p class="text-xl text-gray-500">Click a service to learn more.</p>
+                <p class="text-xl text-gray-500">Click a resource to learn more.</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- 1. Recovery Card -->
+                <!-- Recovery Card -->
                 <a href="recovery.html" class="bg-white p-8 rounded-xl border-b-4 border-purple-600 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300 group cursor-pointer block flex flex-col justify-between h-full">
                     <div>
                         <div class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center mb-6 text-purple-700 group-hover:bg-purple-600 group-hover:text-white transition">
@@ -135,7 +132,7 @@
                     <span class="text-purple-600 font-bold text-sm mt-6 inline-block group-hover:underline">Learn about First Chance Support &rarr;</span>
                 </a>
 
-                <!-- 2. Mental Health Card -->
+                <!-- Mental Health Card -->
                 <a href="mental_health.html" class="bg-white p-8 rounded-xl border-b-4 border-blue-600 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300 group block flex flex-col justify-between h-full">
                     <div>
                         <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6 text-blue-700 group-hover:bg-blue-600 group-hover:text-white transition">
@@ -147,7 +144,7 @@
                     <span class="text-blue-600 font-bold text-sm mt-6 inline-block group-hover:underline">Navigate Care & Grief &rarr;</span>
                 </a>
 
-                <!-- 3. Education Card -->
+                <!-- Education Card -->
                 <a href="education.html" class="bg-white p-8 rounded-xl border-b-4 border-yellow-500 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300 group block flex flex-col justify-between h-full">
                     <div>
                         <div class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mb-6 text-yellow-700 group-hover:bg-yellow-500 group-hover:text-white transition">
@@ -159,7 +156,7 @@
                     <span class="text-yellow-600 font-bold text-sm mt-6 inline-block group-hover:underline">Unlock Potential & Skills &rarr;</span>
                 </a>
 
-                <!-- 4. Wellness Card -->
+                <!-- Wellness Card -->
                 <a href="wellness.html" class="bg-white p-8 rounded-xl border-b-4 border-green-600 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300 group block flex flex-col justify-between h-full">
                     <div>
                         <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mb-6 text-green-700 group-hover:bg-green-600 group-hover:text-white transition">
@@ -171,7 +168,7 @@
                     <span class="text-green-700 font-bold text-sm mt-6 inline-block group-hover:underline">Strengthen Body & Mind &rarr;</span>
                 </a>
 
-                <!-- 5. Stability Card -->
+                <!-- Stability Card -->
                 <a href="stability.html" class="bg-white p-8 rounded-xl border-b-4 border-teal-600 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300 group block flex flex-col justify-between h-full">
                     <div>
                         <div class="w-14 h-14 bg-teal-100 rounded-full flex items-center justify-center mb-6 text-teal-700 group-hover:bg-teal-600 group-hover:text-white transition">
@@ -194,19 +191,14 @@
         </div>
     </section>
 
-       <!-- Footer -->
+    <!-- Footer -->
     <footer class="bg-moss-dark text-white py-20 mt-auto border-t border-green-900">
         <div class="max-w-6xl mx-auto px-6">
             
             <div class="flex flex-col md:flex-row justify-between items-center gap-12">
-                
-                <!-- Left: The Identity -->
                 <div class="text-center md:text-left">
                     <div class="flex flex-col items-center md:items-start gap-4">
-                        <!-- Real Logo Seal -->
                         <img src="hitv-logo.jpg" alt="HITV Seal" class="h-24 w-24 rounded-full border-2 border-green-800 opacity-90 shadow-lg object-cover">
-                        
-                        <!-- Text Branding -->
                         <div>
                             <div class="flex items-baseline gap-2 justify-center md:justify-start">
                                 <span class="font-logo text-3xl font-bold text-white tracking-widest leading-none">HITV</span>
@@ -216,13 +208,10 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Right: The "Why" (Motto & Contact) -->
                 <div class="text-center md:text-right max-w-md">
                     <blockquote class="text-2xl font-serif italic text-green-100 mb-6 leading-relaxed">
                         "We are all helpers one to another."
                     </blockquote>
-                    
                     <div class="flex flex-col gap-2">
                         <a href="mailto:help@hitvmemphis.org" class="text-lg font-bold hover:text-gold transition flex items-center justify-center md:justify-end gap-2">
                             <i class="fa-solid fa-envelope"></i> help@hitvmemphis.org
@@ -230,10 +219,8 @@
                         <p class="text-green-400 text-sm">Memphis, Tennessee</p>
                     </div>
                 </div>
-
             </div>
 
-            <!-- Bottom Divider & Legal -->
             <div class="border-t border-green-800 mt-16 pt-8 text-center md:text-left flex flex-col md:flex-row justify-between items-end text-xs text-green-400/60">
                 <div class="max-w-lg mx-auto md:mx-0">
                     <p class="mb-1">*HITV is a Tennessee non-profit corporation. We are currently pending 501(c)(3) tax-exempt status from the IRS.</p>
@@ -249,6 +236,7 @@
 
 </body>
 </html>
+ 
 
 
 
