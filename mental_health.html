@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Support - HITV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+        
+        body { font-family: 'Lato', sans-serif; }
+        h1, h2, h3, blockquote { font-family: 'Playfair Display', serif; }
+        .font-logo { font-family: 'Cinzel', serif; }
+        
+        /* Vineyard Palette */
+        .text-moss { color: #2C5F2D; }
+        .bg-cream { background-color: #FDFBF7; }
+        .bg-moss { background-color: #2C5F2D; }
+        .bg-moss-dark { background-color: #1F4421; }
+        .text-gold { color: #D4A373; }
+        
+        /* Mental Health Specific Colors */
+        .text-blue-vineyard { color: #2B6CB0; }
+        .bg-blue-light { background-color: #EBF8FF; }
+    </style>
+</head>
+<body class="bg-cream text-gray-700 antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-stone-100">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <i class="fa-solid fa-grapes text-moss text-3xl group-hover:rotate-12 transition"></i>
+                    <div class="flex flex-col justify-center">
+                        <div class="flex items-baseline gap-2">
+                            <span class="font-logo text-3xl font-bold text-moss tracking-widest group-hover:opacity-80 transition leading-none">HITV</span>
+                            <span class="text-sm text-gray-400 font-light uppercase tracking-widest border-l border-gray-300 pl-2 leading-none">Memphis</span>
+                        </div>
+                        <span class="text-[10px] uppercase tracking-[0.2em] text-gold font-bold mt-1">Help In The Vineyard</span>
+                    </div>
+                </a>
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-500 hover:text-moss font-medium hidden sm:block">Back to Home</a>
+                    <a href="donate.html" class="bg-moss text-white px-6 py-2 rounded-full font-medium hover:bg-moss-dark transition shadow-md">Support Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative bg-blue-900 py-24 overflow-hidden">
+        <div class="absolute inset-0 opacity-30">
+             <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" class="w-full h-full object-cover" alt="Calm morning light">
+        </div>
+        <div class="relative max-w-4xl mx-auto px-6 text-center text-white">
+            <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl backdrop-blur-sm">
+                <i class="fa-solid fa-brain"></i>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Mental Health Support</h1>
+            <p class="text-xl text-blue-100 font-light italic">"You don't have to carry it alone."</p>
+        </div>
+    </div>
+
+    <!-- The Problem / Solution -->
+    <section class="py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-6">
+            
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Navigating the Confusion</h2>
+            
+            <div class="prose prose-lg text-gray-600 space-y-6 leading-relaxed">
+                <p>
+                    When you are in a mental health crisis—or when you are grieving the loss of a loved one—the last thing you have energy for is navigating a complicated medical system. Finding a therapist who takes your insurance, understands your story, and has an open slot can feel impossible.
+                </p>
+                <p>
+                    <strong>HITV is here to bridge that gap.</strong>
+                </p>
+                <p>
+                    We are not a clinic, and we don't just hand you a list of phone numbers. We serve as a <strong>concierge for your care</strong>. Our Mental Health Committee, led by clinical experts, vets local providers to ensure we are connecting you to safe, effective, and compassionate help.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Help (Services) -->
+    <section class="py-20 bg-blue-light border-t border-blue-100">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border-t-4 border-blue-500">
+                    <i class="fa-solid fa-user-doctor text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Clinical Connections</h3>
+                    <p class="text-gray-600 text-sm">We provide direct referrals to a trusted network of licensed therapists and psychiatrists. We help you understand your options, including sliding-scale and pro-bono services.</p>
+                </div>
+
+                <!-- Service 2 (Grief Focus) -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border-t-4 border-blue-500">
+                    <i class="fa-solid fa-heart-crack text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Grief & Loss</h3>
+                    <p class="text-gray-600 text-sm">Losing a loved one changes everything. We connect families and individuals to grief counselors and support groups who understand that grief is a journey, not a problem to be fixed.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border-t-4 border-blue-500">
+                    <i class="fa-solid fa-lightbulb text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Education & Awareness</h3>
+                    <p class="text-gray-600 text-sm">We believe knowledge is power. We offer resources to help you understand your own mind and body—demystifying diagnosis, medication, and the effects of trauma.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- The "Whole Person" Quote -->
+    <section class="py-20 bg-white text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <blockquote class="text-2xl md:text-3xl text-blue-vineyard italic leading-relaxed font-serif mb-8">
+                "Asking for help isn't a sign of weakness. It's the first step of courage."
+            </blockquote>
+            <a href="mailto:damon@hitvmemphis.org" class="inline-block bg-moss text-white px-8 py-4 rounded-full font-bold hover:bg-moss-dark transition shadow-lg">
+                Connect with a Resource
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 text-center">
+        <h2 class="text-2xl font-bold text-green-400 mb-2 font-serif">HITV</h2>
+        <p class="text-gray-400 text-sm">&copy; 2025 Help In The Vineyard. Memphis, TN.</p>
+    </footer>
+
+</body>
+</html>
